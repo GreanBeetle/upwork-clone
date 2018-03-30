@@ -20,19 +20,20 @@ N/A
 
 ## Specifications
 
-* Create user model, component. Allow user to create new handle and password.
-* Create job model, component. Allow user to list new project or job.
-* 
+* Create user model, component. Allow user to create new handle and password. Temporarily store user info in array of user objects.
+* Create job model, component. Allow user to list new project or job. Temporarily store info in array of project objects.
+* Create horizontal navbar that includes at least three of the following options. Web Dev. Mobile Dev. Design. Writing. Admin Support. Customer Service. Marketing.
+* When navbar option clicked, display info via z-index. E.g. "student project, no information available"
+* Build 'tabs section on main page'. Include three tabs. 'If you're hiring.' 'If you're freelancing.' 'FAQs.'
+* Create jumbotron with a 'How It Works' title and a responsive 'Get Started' button.
+* Clone the two columns directly beneath the jumbotron. Clone the page down to, but not beyond, the upworks paragraph titled 'Hire the best freelancer'.
 
 ## Built With
 
 * HTML
 * CSS, Bootstrap
 * Javascript
-* JQuery
-* Webpack
-* Jasmine
-* Karma
+* Angular
 * NPM
 
 ## Authors
