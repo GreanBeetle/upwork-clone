@@ -20,6 +20,7 @@ N/A
 
 ## Specifications
 
+* Include API, if possible. 
 * Create user model, component. Allow user to create new handle and password. Temporarily store user info in array of user objects.
 * Create job model, component. Allow user to list new project or job. Temporarily store info in array of project objects.
 * Create horizontal navbar that includes at least three of the following options. Web Dev. Mobile Dev. Design. Writing. Admin Support. Customer Service. Marketing.
