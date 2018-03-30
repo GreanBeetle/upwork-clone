@@ -65,12 +65,20 @@
 
 .jumbotron {
   height: 440px;
+  text-align: center;
   background-image: url(//www.upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg);
 }
 
-h1 {
+#jumbotron-header {
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
-  text-align: center; 
+
+}
+
+.text-large {
+  font-family: 'Gotham Light';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 10;
 }

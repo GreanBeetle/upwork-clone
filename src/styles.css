@@ -5,6 +5,11 @@
   src: url("./gotham-medium.otf");
 }
 
+@@font-face {
+  font-family: 'Gotham Light';
+  src: url('./gotham-light-regular.otf');
+}
+
 * {
-  font-family: 'Gotham Medium'; 
+  font-family: 'Gotham Medium';
 }
