@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("./gotham-medium.otf");
+}
+
+* {
+  font-family: 'Gotham Medium'; 
+}

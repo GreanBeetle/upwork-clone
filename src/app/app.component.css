@@ -20,10 +20,10 @@
 #searchbox {
   height: 42px;
   width: 210px;
-  border-width: 1px;
+  border-width: 1px solid gray;
   color: #656565;
   font-size: 13.5px;
-  margin-top: 16px;
+  margin-top: 14px;
   text-align: center;
 }
 
@@ -44,12 +44,16 @@
   text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
 }
 
-.list-items {
+.nav-item {
   display: inline-block; /* CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
 }
 
 #invisible-span {
   width: 100%; /* INVISIBLE CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
+}
+
+#sign-up {
+  color: #72D84E;
 }
 
 
