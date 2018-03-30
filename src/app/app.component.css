@@ -28,7 +28,7 @@
   color: #656565;
   font-size: 13.5px;
   margin-top: 13px;
-  text-align: center; 
+  text-align: center;
 
 }
 
@@ -40,6 +40,15 @@
 
 li {
   list-style: none;
+}
+
+#nav-visitor-item-container {
+
+}
+
+.nav-visitor-item {
+  margin-top: 13px;
+  float: right;
 }
 
 /* jumbotron */
