@@ -1,5 +1,6 @@
 * {
   font-family: 'Gotham Medium';
+  letter-spacing: .2px;
 }
 
 /* navbar */
@@ -29,6 +30,7 @@
   font-size: 13.5px;
   margin-top: 14px;
   text-align: center;
+  border-radius: 3px;
 }
 
 #big-nav {
@@ -38,7 +40,12 @@
 
 #post-job-button {
   background: none;
+  border-color: none;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
   width: 130px;
+  border-radius: 3px;
+  font-size: 10 !important;
+  font-family: 'Gotham Light' !important;
 }
 
 #nav-visitor-item-box {
@@ -73,12 +80,9 @@
   background-image: url(//www.upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg);
   padding: 0;
 }
+
 #jumbotron-main {
   height: 363px;
-}
-
-#jumbotron-nav-tabs {
-  height: 77px;
 }
 
 #jumbotron-header {
@@ -87,9 +91,13 @@
   line-height: 60px;
 }
 
-#text-large {
+#jumbotron-text {
   font-family: 'Gotham Light' !important;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+}
+
+#jumbotron-nav-tabs {
+  height: 77px;
 }
