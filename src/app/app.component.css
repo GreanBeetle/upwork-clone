@@ -4,16 +4,6 @@
   height: 111px;
 }
 
-.nav-visitor {
-  height: 71px;
-  width: 1278;
-}
-
-.nav-list {
-  height: 40px;
-  width: 1278;
-}
-
 .nav-header-image {
   height: 68px;
   width: 106px;
@@ -21,6 +11,11 @@
   float: left;
 }
 
+#searchbox-container {
+  padding-left: 44px;
+  border: none;
+  text-align: center;
+}
 
 #searchbox {
   height: 42px;
@@ -32,39 +27,30 @@
   text-align: center;
 }
 
-#searchbox-container {
-  padding-left: 44px;
-  border: none;
+#nav-visitor {
+  height: 71px;
+  width: 1278;
+}
+
+
+#visitor-item-box {
+  margin-top: 24px;
   text-align: center;
 }
 
-li {
-  list-style: none;
+#nav-list {
+  height: 40px;
+  width: 1278;
+  text-align: justify;
 }
 
-.visitor-item {
-  height: 68px;
+.list-items {
+  display: inline-block;
 }
 
-
-
-#box {
-  margin-top: 16px;
-  text-align: center;
+#invisible-span {
+  width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* jumbotron */
