@@ -4,9 +4,29 @@
   height: 111px;
 }
 
+.nav-visitor {
+  height: 71px;
+  width: 1278;
+  float: right;
+  display: block;
+}
+
+.nav-list {
+  height: 40px;
+  width: 1278;
+  display: block;
+}
+
 .nav-header-image {
   height: 68px;
   width: 106px;
+  float: left;
+  display: block; 
+}
+
+#searchbox {
+  height: 42px;
+  width: 210px;
 }
 
 /* jumbotron */
