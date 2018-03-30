@@ -33,23 +33,23 @@
 }
 
 
-#visitor-item-box {
+#nav-visitor-item-box {
   margin-top: 24px;
-  text-align: center;
+  text-align: justify;
 }
 
 #nav-list {
   height: 40px;
   width: 1278;
-  text-align: justify;
+  text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
 }
 
 .list-items {
-  display: inline-block;
+  display: inline-block; /* CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
 }
 
 #invisible-span {
-  width: 100%;
+  width: 100%; /* INVISIBLE CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
 }
 
 
