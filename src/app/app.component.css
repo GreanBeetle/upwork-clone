@@ -32,6 +32,10 @@
   width: 1278;
 }
 
+#post-job-button {
+  background: none;
+  width: 130px;
+}
 
 #nav-visitor-item-box {
   margin-top: 24px;
@@ -62,4 +66,11 @@
 .jumbotron {
   height: 440px;
   background-image: url(//www.upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center; 
 }
