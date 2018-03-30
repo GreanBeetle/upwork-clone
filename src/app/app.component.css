@@ -18,6 +18,7 @@
   height: 68px;
   width: 106px;
   margin: 0;
+  float: left;
 }
 
 
@@ -29,7 +30,6 @@
   font-size: 13.5px;
   margin-top: 13px;
   text-align: center;
-
 }
 
 #searchbox-container {
@@ -42,14 +42,20 @@ li {
   list-style: none;
 }
 
-#nav-visitor-item-container {
+<div class="container">
+  <div>A</div><div>B</div><div>C</div>
+</div>
 
+#nav-visitor-item-box {
+  display: inline-block;
 }
 
-.nav-visitor-item {
-  margin-top: 13px;
-  float: right;
+#visitor-item {
+  display: inline-block;
 }
+
+
+
 
 /* jumbotron */
 

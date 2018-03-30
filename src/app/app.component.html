@@ -3,27 +3,30 @@
   <nav class="nav-main">
 <!-- nav-visitor -->
     <div class="row" id="nav-visitor">
-      <div class="navbar-header">
-        <img class="nav-header-image" src="https://www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" alt="">
+      <div class="col-sm-4">
+        <div class="navbar-header">
+          <img class="nav-header-image" src="https://www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" alt="">
+        </div>
+        <div id="searchbox-container">
+          <input type="text" name="" value="" placeholder="SEARCHBOX" id="searchbox">
+        </div>
       </div>
-      <div id="searchbox-container">
-        <input type="text" name="" value="" placeholder="SEARCHBOX" id="searchbox">
+      <div class="col-md-4">
+        <!-- white space -->
       </div>
-      <div id="nav-visitor-item-container">
-        <div class="nav-visitor-item">
-          <li>nav-object</li>
-        </div>
-        <div class="nav-visitor-item">
-          <li>nav-object</li>
-        </div>
-        <div class="nav-visitor-item">
-          <li>nav-object</li>
-        </div>
-        <div class="nav-visitor-item">
-          <li>nav-object</li>
-        </div>
+      <div class="col-md-4" id="nav-visitor-item-box">
+        <div>nav-object</div><div>nav-object</div><div>nav-object</div>
+      </div>
 
-      </div>
+      .container > div {
+          display: inline-block;
+          display: -moz-inline-box;
+          *display: inline; /* For IE7 */
+          zoom: 1; /* Trigger hasLayout */
+          width: 33%;
+          text-align: center;
+      }
+
 
 
     </div>
