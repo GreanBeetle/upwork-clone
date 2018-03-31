@@ -3,8 +3,6 @@
   letter-spacing: .2px;
 }
 
-
-
 /* navbar */
 
 .nav-main {
@@ -42,6 +40,11 @@
   padding-right: 20%;
 }
 
+#search-and-logo {
+  height: auto;
+  overflow: hidden;
+}
+
 #post-job-button {
   background: none;
   border-color: none;
@@ -55,6 +58,8 @@
 #nav-visitor-item-box {
   margin-top: 24px;
   text-align: justify;
+  height: 30px;
+  overflow: hidden;
 }
 
 #nav-list {
@@ -67,12 +72,15 @@
   padding-right: 20%;
 }
 
-.nav-item {
+.sm-nav-item, .lg-nav-item {
   display: inline-block; /* CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
-
 }
 
-
+.sm-nav-item {
+  /* padding-top: 8px; */
+  height: 40px;
+  padding-top: 9px;
+}
 
 #invisible-span {
   width: 100%; /* INVISIBLE CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
