@@ -3,6 +3,8 @@
   letter-spacing: .2px;
 }
 
+
+
 /* navbar */
 
 .nav-main {
@@ -36,6 +38,8 @@
 #big-nav {
   height: 71px;
   width: 1278;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 #post-job-button {
@@ -55,13 +59,20 @@
 
 #nav-list {
   height: 40px;
-  width: 1278;
   text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
+  background-color: #F9F9F9;
+  border-top: .5px solid black;
+  width: 100% !important;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .nav-item {
   display: inline-block; /* CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
+
 }
+
+
 
 #invisible-span {
   width: 100%; /* INVISIBLE CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
