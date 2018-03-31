@@ -63,10 +63,11 @@
 }
 
 #nav-list {
+
   height: 40px;
   text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
   background-color: #F9F9F9;
-  border-top: .5px solid black;
+  border-top: .2px solid #898DA2;
   width: 100% !important;
   padding-left: 20%;
   padding-right: 20%;
