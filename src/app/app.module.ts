@@ -11,6 +11,7 @@ import { ListProjectComponent } from './list-project/list-project.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { routing } from './app.routing';
     ListProjectComponent,
     EditProjectComponent,
     WelcomeComponent,
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,

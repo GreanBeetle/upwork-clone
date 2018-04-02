@@ -1,3 +1,10 @@
-<p>
-  list-project works!
-</p>
+<div class="jumbotron">
+  <h1>PROJECTS</h1>
+  <div class="card" *ngFor="let project of projects">
+    <div class="card-title">
+      <h1>{{project.title}}</h1><br>
+    </div>
+    <h3>{{project.category}}</h3><br>
+    <h3>{{project.budget}}</h3>
+  </div>
+</div>

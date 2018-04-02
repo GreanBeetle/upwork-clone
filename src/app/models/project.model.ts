@@ -1,8 +1,9 @@
 export class Project {
   constructor(
-    public title: string, 
+    public title: string,
     public category: string,
     public description: string,
-    public budget: number,
+    public budget: string,
+    public id: number,
   ){}
 }
