@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1>PROJECTS</h1>
-  <div class="card" *ngFor="let project of projects">
+  <div class="card" *ngFor="let project of projects" (click)="projectDetail(project)">
     <div class="card-title">
       <h1>{{project.title}}</h1><br>
     </div>
