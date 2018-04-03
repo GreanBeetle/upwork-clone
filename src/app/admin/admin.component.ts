@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(title: string, category: string, description: string, budget: string) {
     var newProject: Project = new Project(title, category, description, budget);
-    this.projectService.addProject(newProject); 
+    this.projectService.addProject(newProject);
   }
 
 }

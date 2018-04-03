@@ -16,6 +16,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,6 +37,7 @@ export const firebaseConfig = {
     WelcomeComponent,
     ProjectDetailComponent,
     AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

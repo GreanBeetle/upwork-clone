@@ -17,16 +17,11 @@ export class ProjectService {
   }
 
   addProject(newProject: Project) {
-    this.projects.push(newProject); 
+    this.projects.push(newProject);
   }
 
-  // RETURN SPECIFIC PROJECT
-  // getProjectById(projectId: number) {
-  //   for (var i = 0; i <= PROJECTS.length - 1; i++) {
-  //     if (PROJECTS[i].id === projectId) {
-  //       return PROJECTS[i];
-  //     }
-  //   }
-  // }
+  getProjectById(id: string) {
+    return this.database.object('projects/' + id);
+  }
 
 }
