@@ -1,34 +1,25 @@
 <!-- TOP NAVBAR -->
-
-  <nav class="nav-main">
-    <!-- big nav -->
-    <div class="row" id="big-nav">
-      <div class="col-sm-4" id="search-and-logo">
-        <div class="navbar-header">
-          <img class="nav-header-image" src="https://www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" alt="">
-        </div>
-        <a routerLink="">HOME</a>
-        <a routerLink="listProject">PROJECTS</a>
+<nav class="nav-main">
+  <!-- big nav -->
+  <div class="row" id="big-nav">
+    <div class="col-sm-4" id="search-and-logo">
+      <div class="navbar-header">
+        <img class="nav-header-image" src="https://www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" alt="">
       </div>
-      <div class="col-md-4">
-        <!-- white space -->
-      </div>
-      <div class="col-md-4" >
-        <div class="container" id="nav-visitor-item-box">
-          <a class="lg-nav-item">LOGIN</a>
-          <a class="lg-nav-item" routerLink="addUser"id="sign-up">SiGN UP</a>
-          <button class="lg-nav-item" type="button" id="post-job-button">post a job</button>
-          <span class="lg-nav-item" id="invisible-span"></span>
-        </div>
+      <a routerLink="">HOME</a>
+      <a routerLink="listProject">PROJECTS</a>
+    </div>
+    <div class="col-md-4">
+      <!-- white space -->
+    </div>
+    <div class="col-md-4" >
+      <div class="container" id="nav-visitor-item-box">
+        <a class="lg-nav-item">LOGIN</a>
+        <a class="lg-nav-item" routerLink="addUser"id="sign-up">SiGN UP</a>
+        <button class="lg-nav-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
+        <span class="lg-nav-item" id="invisible-span"></span>
       </div>
     </div>
-    <!-- little nav -->
-    <div id="nav-list">
-      <span class="sm-nav-item">web developers</span>
-      <span class="sm-nav-item">mobile developers</span>
-      <span class="sm-nav-item">design</span>
-      <span class="sm-nav-item">writing</span>
-      <span class="sm-nav-item" id="invisible-span"></span>
-    </div>
-  </nav>
-  <router-outlet></router-outlet>
+  </div>
+</nav>
+<router-outlet></router-outlet>

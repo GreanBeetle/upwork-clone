@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../models/project.model';
 import { Router } from '@angular/router';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-list-project',
   templateUrl: './list-project.component.html',
-  styleUrls: ['./list-project.component.css']
+  styleUrls: ['./list-project.component.css'],
+  providers: [ProjectService]
 })
-export class ListProjectComponent {
+export class ListProjectComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  projects: Project[];
 
-  projects: Project[] = [
-    new Project("Personal Website", "Web Development", "I run a foodcart and need a website for marketing purposes", "$3000", 1),
-    new Project("Database", "Back End", "Need to construct database for contracting firm", "$8500", 2),
-    new Project("Web Application", "Web Development", "Local NGO needs web portal", "$15,000", 3),
-  ];
+  constructor(private router: Router, private projectService: ProjectService) {}
+
+  ngOnInit(){
+    this.projects = this.projectService.getProjects(); 
+  }
 
   projectDetail(clicked: Project) {
     this.router.navigate(['projects', clicked.id]);
