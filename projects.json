@@ -1,0 +1,20 @@
+{ "projects": [{
+  "title": "Full-stack developer for startup",
+  "category": "Web Development",
+  "description": "Looking for an experienced full-stack web developer to build an insurance website. The project should take 1-2 months.",
+  "budget": "10,000",
+  "id": "1"
+  }, {
+  "title": "User-facing Platform on EC2 to Present info from JSON",
+  "category": "DATA SCIENCE & ANALYTICS",
+  "description": "We are looking for an analytics person with some web development skills to dig into our even based database on Redshift to present the information we collect on our customers to our customer support agents so we can see the issues they are having",
+  "budget": "30,000",
+  "id": "2"
+  }, {
+  "title": "Web Content Copy Writing",
+  "category": "Writing",
+  "description": "SEO optimization and keywords are necessary here - we're looking for someone with experience in writing web content specifically.",
+  "budget": "2,000",
+  "id": "3"
+  }]
+}
