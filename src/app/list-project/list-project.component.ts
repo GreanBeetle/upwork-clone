@@ -21,6 +21,6 @@ export class ListProjectComponent implements OnInit {
   }
 
   projectDetail(clicked: Project) {
-    this.router.navigate(['projects', clicked.id]);
+    // this.router.navigate(['projects', clicked.id]);
   }
 }

@@ -4,6 +4,5 @@ export class Project {
     public category: string,
     public description: string,
     public budget: string,
-    public id: number,
   ){}
 }

@@ -16,6 +16,10 @@ export class ProjectService {
     return this.projects;
   }
 
+  addProject(newProject: Project) {
+    this.projects.push(newProject); 
+  }
+
   // RETURN SPECIFIC PROJECT
   // getProjectById(projectId: number) {
   //   for (var i = 0; i <= PROJECTS.length - 1; i++) {

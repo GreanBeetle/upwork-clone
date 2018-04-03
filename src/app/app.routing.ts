@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ListProjectComponent } from './list-project/list-project.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { AddProjectComponent } from './add-project/add-project.component';
+import { AdminComponent } from './admin/admin.component'; 
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'addProject',
     component: AddProjectComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ]
 
