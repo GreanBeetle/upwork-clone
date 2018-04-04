@@ -3,12 +3,17 @@
 .jumbotron {
   height: 440px;
   text-align: center;
-  background-image: url(//www.upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg);
   padding: 0;
+  background-color: #F9F9F9;
+  margin-bottom: 0;
 }
 
 #jumbotron-main {
-  height: 363px;
+  height: 440px;
+  background-color: #F9F9F9;
+  background: url(http://upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg)  50% no-repeat fixed;
+  background-size: contain;
+  background-position: top;
 }
 
 #jumbotron-header {
@@ -46,4 +51,33 @@
 
 #jumbotron-nav-tabs {
   height: 77px;
+}
+
+#trusted {
+  background-color: #494949;
+  color: #b2b2b2;
+  font-family: 'Gotham Medium';
+  height: 110px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-image: url(//www.upwork.com/static/marketing/adquiro-webpack/images/logobar-desktop.c7b2d4f5cdb2.svg);
+  background-size: auto 47px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#trusted-text {
+  margin-top: 10px;
+  text-align: left;
+  width: 120px;
+  font-size: 0.8em;
+}
+
+#content {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 2vh;
+  margin-top: 3vh;
 }
