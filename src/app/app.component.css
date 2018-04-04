@@ -3,11 +3,18 @@
   letter-spacing: .2px;
 }
 
-/* navbar */
-
 .nav-main {
   height: 111px;
 }
+
+#big-nav {
+  height: 71px;
+  border: 1px rgba(73, 73, 73, 0.2) solid;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* LEFT SIDE */
 
 #search-and-logo {
   height: auto;
@@ -20,13 +27,13 @@
   }
 }
 
-
 .nav-header-image {
   height: 68px;
   width: 106px;
   margin: 0;
   float: left;
 }
+
 
 .home-project-links {
   margin: 10px;
@@ -41,12 +48,7 @@
   display: inline-block;
 }
 
-#big-nav {
-  height: 71px;
-  border: 1px rgba(73, 73, 73, 0.2) solid;
-  padding-left: 20%;
-  padding-right: 20%;
-}
+/* BELOW */
 
 #small-nav {
   height: 34px;
@@ -56,6 +58,13 @@
   box-shadow: 0 8px 6px -6px rgba(73, 73, 73, 0.8);
 }
 
+/* RIGHT */
+
+#nav-visitor-item-box {
+  text-align: justify;
+  margin-top: 6px;
+  text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
+}
 
 #post-job-button {
   background: none;
@@ -67,30 +76,22 @@
   font-family: 'Gotham Light' !important;
 }
 
-#nav-visitor-item-box {
-  text-align: justify;
-  margin-top: 6px;
-  overflow: hidden;
-}
+.lg-nav-item, #login, #isloggedin {
 
-#nav-list {
-  height: 40px;
-  text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
-  background-color: #F9F9F9;
-  border-top: .2px solid #898DA2;
-  width: 100% !important;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.sm-nav-item, .lg-nav-item {
+  margin: 10px;
   display: inline-block; /* CHILD: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS */
 }
 
-.sm-nav-item {
-  /* padding-top: 8px; */
-  height: 40px;
-  padding-top: 9px;
+@media (max-width: 1820px) {
+  #post-job-button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  #isloggedin, #login {
+    display: none !important;
+  }
 }
 
 #invisible-span {

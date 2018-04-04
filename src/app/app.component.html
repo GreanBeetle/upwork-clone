@@ -7,21 +7,19 @@
       <a routerLink="" class="home-project-links">HOME</a>
       <a routerLink="listProject" class="home-project-links">PROJECTS</a>
     </div>
-    <div class="col-md-4" >
-      <div class="container" id="nav-visitor-item-box">
-<!-- AUTHENTICATION -->
-        <div *ngIf="!isLoggedIn" id="login">
-          <a class="lg-nav-item" (click)="login()">LOGIN</a>
-          <a class="lg-nav-item" routerLink="addUser" id="sign-up">SiGN UP</a>
-        </div>
-        <div *ngIf="isLoggedIn" id="isloggedin">
-          <a>{{userName}}</a>
-          <a (click)="logout()">LOG OUT</a>
-        </div>
-<!-- POST JOB -->
-        <button class="lg-nav-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
-        <span class="lg-nav-item" id="invisible-span"></span>
+    <div class="col-md-4" id="nav-visitor-item-box">
+      <!-- AUTHENTICATION -->
+      <div *ngIf="!isLoggedIn" id="login">
+        <span class="lg-nav-item" (click)="login()">LOGIN</span>
+        <span class="lg-nav-item" routerLink="addUser" id="sign-up">SiGN UP</span>
       </div>
+      <div *ngIf="isLoggedIn" id="isloggedin">
+        <a>{{userName}}</a>
+        <a (click)="logout()">LOG OUT</a>
+      </div>
+      <!-- POST JOB -->
+      <button class="lg-nav-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
+      <span class="lg-nav-item" id="invisible-span"></span>
     </div>
   </div>
   <div class="row" id="small-nav">
