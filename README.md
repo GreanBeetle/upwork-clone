@@ -18,7 +18,7 @@ N/A
 
 * _`N/A`_
 
-## Specifications
+## Current Features and Specs
 
 * Include API, if possible. 
 * Create user model, component. Allow user to create new handle and password. Temporarily store user info in array of user objects.
@@ -28,6 +28,8 @@ N/A
 * Build 'tabs section on main page'. Include three tabs. 'If you're hiring.' 'If you're freelancing.' 'FAQs.'
 * Create jumbotron with a 'How It Works' title and a responsive 'Get Started' button.
 * Clone the two columns directly beneath the jumbotron. Clone the page down to, but not beyond, the upworks paragraph titled 'Hire the best freelancer'.
+
+## Future Features and Specs
 
 ## Built With
 

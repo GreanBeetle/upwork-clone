@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">ENTER EMAIL and PASSWORD</h4>
+    <input #newEmail placeholder="YOUR EMAIL ADDRESS"><br>
+    <input #newPassword placeholder="PASSWORD"><br>
+    <button (click)="createUser(newEmail.value, newPassword.value); newEmail.value=''; newPassword.value='';" class="btn btn-success">CREATE</button>
+  </div>
+</div>

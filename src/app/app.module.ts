@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AddUserComponent } from './add-user/add-user.component';
-import { ListUserComponent } from './list-user/list-user.component';
-import { EditUserComponent } from './edit-user/edit-user.component';
 import { AddProjectComponent } from './add-project/add-project.component';
 import { ListProjectComponent } from './list-project/list-project.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
@@ -19,6 +16,7 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,9 +29,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    AddUserComponent,
-    ListUserComponent,
-    EditUserComponent,
     AddProjectComponent,
     ListProjectComponent,
     EditProjectComponent,
@@ -42,6 +37,7 @@ export const firebaseConfig = {
     AdminComponent,
     LoginComponent,
     GetStartedComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
