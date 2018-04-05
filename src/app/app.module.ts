@@ -16,6 +16,7 @@ import { AdminComponent } from './admin/admin.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,6 +37,7 @@ export const firebaseConfig = {
     AdminComponent,
     GetStartedComponent,
     SignUpComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,

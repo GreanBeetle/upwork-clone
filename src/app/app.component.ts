@@ -9,17 +9,25 @@ import { LoginService } from './login.service';
 })
 
 export class AppComponent {
-
+  loginClick = null;
 
   openModal(){
     this.display='block';
   }
 
-  onCloseHandled(){
-    this.display='none';
+  openSignup(){
+    this.loginClick="false";
+    this.openModal();
   }
 
+  openSignin() {
+    this.openModal();
+  }
 
+  onCloseHandled(){
+    this.display='none';
+    this.loginClick = null;
+  }
 
   constructor(public authService: LoginService) {
     this.authService.user.subscribe(user =>  {
@@ -31,10 +39,6 @@ export class AppComponent {
       }
 
     });
-  }
-
-  loginGoogle() {
-    this.authService.loginGoogle();
   }
 
   logout() {

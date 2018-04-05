@@ -47,4 +47,31 @@ export class LoginService {
       console.log(error);
     }); // error function
   } // createUser
+
+  // Handling user Sign In
+
+  toggleSignIn(email, password) {
+     if (firebase.auth().currentUser) {
+       // [START signout]
+       firebase.auth().signOut();
+       // [END signout]
+     } else {
+       // Sign in with email and pass.
+       // [START authwithemail]
+       firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+         // Handle Errors here.
+         var errorCode = error.code;
+         var errorMessage = error.message;
+         // [START_EXCLUDE]
+         if (errorCode === 'auth/wrong-password') {
+           alert('Wrong password.');
+         } else {
+           alert(errorMessage);
+         }
+         console.log(error);
+         // [END_EXCLUDE]
+       });
+       // [END authwithemail]
+     }
+   }
 } // class
