@@ -10,8 +10,13 @@ import { LoginService } from './login.service';
 
 export class AppComponent {
   user;
+
   private isLoggedIn: Boolean;
   private userName: String;
+
+  openModal() {
+    alert("YOU CLICKED THE MODAL BUTTON")
+  }
 
   constructor(public authService: LoginService) {
     this.authService.user.subscribe(user =>  {
@@ -19,17 +24,19 @@ export class AppComponent {
         this.isLoggedIn = false;
       } else {
         this.isLoggedIn = true;
-        this.userName = user.displayName; 
+        this.userName = user.displayName;
       }
 
     });
   }
 
-  login() {
-    this.authService.login();
+  loginGoogle() {
+    this.authService.loginGoogle();
   }
 
-  logout() {
-    this.authService.logout();
+  logoutGoogle() {
+    this.authService.logoutGoogle();
   }
+
+
 }

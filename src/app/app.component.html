@@ -11,7 +11,7 @@
       <!-- AUTHENTICATION -->
       <div *ngIf="!isLoggedIn" id="login">
         <span class="lg-nav-item" (click)="login()">LOGIN</span>
-        <span class="lg-nav-item" routerLink="addUser" id="sign-up">SiGN UP</span>
+        <span class="lg-nav-item" routerLink="sign-up" id="sign-up">SiGN UP</span>
       </div>
       <div *ngIf="isLoggedIn" id="isloggedin">
         <a>{{userName}}</a>
@@ -27,6 +27,15 @@
 </nav>
 
 <router-outlet></router-outlet>
+
+
+<!-- MODAL -->
+<!-- button to open -->
+<button type="button" class="btn btn-info btn-lg" (click)="openModal()">click to open</button>
+
+
+
+<!-- FOOTER -->
 
 <footer class="footer">
   <div class="card" id="footer-card">
