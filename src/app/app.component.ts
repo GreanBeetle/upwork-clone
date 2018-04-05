@@ -9,14 +9,17 @@ import { LoginService } from './login.service';
 })
 
 export class AppComponent {
-  user;
 
-  private isLoggedIn: Boolean;
-  private userName: String;
 
-  openModal() {
-    alert("YOU CLICKED THE MODAL BUTTON")
+  openModal(){
+    this.display='block';
   }
+
+  onCloseHandled(){
+    this.display='none';
+  }
+
+
 
   constructor(public authService: LoginService) {
     this.authService.user.subscribe(user =>  {
@@ -34,8 +37,8 @@ export class AppComponent {
     this.authService.loginGoogle();
   }
 
-  logoutGoogle() {
-    this.authService.logoutGoogle();
+  logout() {
+    this.authService.logout();
   }
 
 

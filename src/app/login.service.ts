@@ -17,11 +17,13 @@ export class LoginService {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
-  logoutGoogle() {
+  logout() {
     this.afAuth.auth.signOut();
   }
 
-  // LOGIN EMAIL PASSWORD
+
+
+  // CREATE USER EMAIL PASSWORD
 
   createUser(email, password) {
     if (email.length < 10) {

@@ -13,7 +13,6 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
-import { LoginComponent } from './login/login.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -35,7 +34,6 @@ export const firebaseConfig = {
     WelcomeComponent,
     ProjectDetailComponent,
     AdminComponent,
-    LoginComponent,
     GetStartedComponent,
     SignUpComponent,
   ],

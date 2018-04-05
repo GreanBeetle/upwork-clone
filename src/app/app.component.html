@@ -10,8 +10,8 @@
     <div class="col-md-4" id="nav-visitor-item-box">
       <!-- AUTHENTICATION -->
       <div *ngIf="!isLoggedIn" id="login">
-        <span class="lg-nav-item" (click)="login()">LOGIN</span>
-        <span class="lg-nav-item" routerLink="sign-up" id="sign-up">SiGN UP</span>
+        <span class="lg-nav-item" (click)="loginGoogle()">LOGIN</span>
+        <span class="lg-nav-item" (click)="openModal()" id="sign-up">SiGN UP</span>
       </div>
       <div *ngIf="isLoggedIn" id="isloggedin">
         <a>{{userName}}</a>
@@ -30,9 +30,19 @@
 
 
 <!-- MODAL -->
-<!-- button to open -->
-<button type="button" class="btn btn-info btn-lg" (click)="openModal()">click to open</button>
-
+<div class="backdrop" [ngStyle]="{'display':display}"></div>
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <app-sign-up></app-sign-up>
+      </div>
+    </div>
+  </div> <!-- .modal-dialog -->
+</div> <!-- .modal -->
 
 
 <!-- FOOTER -->
