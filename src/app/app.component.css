@@ -61,6 +61,12 @@
   text-align: justify; /* PARENT: EVENLY DISTRIBUTE HORIZONTAL MENU ITEMS in CONTAINER */
 }
 
+.nav-right-item {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
 #post-job-button {
   background: none;
   border-color: none;
@@ -69,13 +75,9 @@
   border-radius: 3px;
   font-size: 10 !important;
   font-family: 'Gotham Light' !important;
+  margin-top: 13px; 
 }
 
-.nav-right-item {
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-top: 10px; 
-}
 
 #notLoggedIn, #loggedIn {
   margin: 10px;
