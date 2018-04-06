@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from './login.service';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +12,10 @@ import { LoginService } from './login.service';
 
 export class AppComponent {
   loginClick = null;
-  isLoggedIn = null;
-  userName;
+
+  constructor(public authService: LoginService, public afAuth: AngularFireAuth) {
+    
+  }
 
   openModal(){
     this.display='block';
@@ -31,17 +35,6 @@ export class AppComponent {
     this.loginClick = null;
   }
 
-  constructor(public authService: LoginService) {
-    this.authService.user.subscribe(user =>  {
-      if (user == null) {
-        this.isLoggedIn = false;
-      } else {
-        this.isLoggedIn = true;
-        this.userName = user.displayName;
-      }
-
-    });
-  }
 
   logout() {
     this.authService.logout();

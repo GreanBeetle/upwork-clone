@@ -2,20 +2,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
-import { first } from 'rxjs/operators'; // CHECK AUTH STATE
 
 @Injectable()
 export class LoginService {
   user: Observable<firebase.User>;
-  const authenticatedUser = await isLoggedIn()
+
 
   constructor(public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
-  }
-
-  // determine auth state
-  isLoggedIn() {
-    return this.afAuth.authState.pipe(first()).toPromise();
   }
 
   // LOGIN GOOGLE
@@ -27,26 +21,14 @@ export class LoginService {
     this.afAuth.auth.signOut();
   }
 
-
-
-  async doSomething() {
-     const user = await isLoggedIn()
-     if (user) {
-       // do something
-     } else {
-       // do something else
-    }
-  }
-
-
   // CREATE USER EMAIL PASSWORD
 
   createUser(email, password) {
-    if (email.length < 10) {
+    if (email.length < 5) {
       alert('Please enter an address longer than 10 characters.');
       return;
     }
-    if (password.length < 10 ) {
+    if (password.length < 5 ) {
       alert('Your password must be at least 10 characters');
       return;
     }
@@ -64,7 +46,7 @@ export class LoginService {
     }); // error function
   } // createUser
 
-  // Handling user Sign In
+  // SIGN
 
   toggleSignIn(email, password) {
      if (firebase.auth().currentUser) {
