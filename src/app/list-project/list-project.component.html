@@ -5,10 +5,6 @@
     <div class="card-header">
       <h1>{{project.title}}</h1><br>
     </div>
-    <div class="card-body">
-      <h3>{{project.category}}</h3><br>
-      <h3>{{project.budget}}</h3>
-    </div>
   </div>
 </div>
 
@@ -17,6 +13,15 @@
     <h1>PROJECTS</h1>
   </div>
   <div class="card-body" *ngFor="let project of projects | async">
-    <h4>{{project.title}}</h4>
+    <h3>{{project.title}}</h3>
+    <h3>{{project.category}}</h3>
+    <h3>{{project.description}}</h3>
+    <h3>{{project.budget}}</h3>
+    <span><button (click)="edit()">EDIT</button><button (click)="delete(project)">DELETE</button></span>
+    <div *ngIf="editProject">
+      <label>EDIT TITLE</label>
+      <input [(ngModel)]="project.title">
+      <button (click)="editDone(project)">DONE EDITING</button>
+    </div>
   </div>
 </div>

@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ListProjectComponent implements OnInit {
 
   projects: FirebaseListObservable<any[]>;
+  editProject = null;
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
@@ -23,4 +24,21 @@ export class ListProjectComponent implements OnInit {
   projectDetail(clicked: Project) {
     this.router.navigate(['projects', clicked.$key]);
   }
+
+  edit() {
+    this.editProject = true;
+  }
+
+  editDone(localProject) {
+    this.editProject = null;
+    var firebaseProject = this.projectService.getProjectById(localProject.$key);
+    alert("HERE IS YOUR KEY: " + firebaseProject.$key); 
+    firebaseProject.update({
+      title: localProject.title,
+      artist: localProject.category,
+      description: localProject.description,
+      budget: localProject.budget
+    })
+  }
+
 }
