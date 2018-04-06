@@ -13,9 +13,13 @@ import * as firebase from 'firebase/app';
 export class AppComponent implements OnInit {
   loginClick = null;
   loggedIn = null;
-  userId = auth.user
+  user;
 
-  constructor(public auth: LoginService, public afAuth: AngularFireAuth) {}
+  constructor(public auth: LoginService, public afAuth: AngularFireAuth){
+    this.auth.user.subscribe(user => {
+      console.log("CRAZY CRAZY CRAZY: " + user.uid + user + user.email);
+    });
+  }
 
   ngOnInit() {
 

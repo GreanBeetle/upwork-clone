@@ -8,10 +8,10 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 
 export class LoginService {
-  public user: Observable<firebase.User>; // observable firebase user object
+  user: Observable<firebase.User>; // observable firebase user object
 
   constructor(private afAuth: AngularFireAuth, private router: Router){
-    this.user = afAuth.authState.uid; // this creates the user object above
+    this.user = afAuth.authState; // this creates the user object above
     console.log(this.user + "HERE is SOMETHING");
   }
 
