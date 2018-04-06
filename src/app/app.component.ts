@@ -13,9 +13,9 @@ import * as firebase from 'firebase/app';
 export class AppComponent implements OnInit {
   loginClick = null;
   loggedIn = null;
-  userId = this.afAuth.authState.uid;
+  userId = auth.user
 
-  constructor(public authService: LoginService, public afAuth: AngularFireAuth) {}
+  constructor(public auth: LoginService, public afAuth: AngularFireAuth) {}
 
   ngOnInit() {
 
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-    this.authService.logout();
+    this.auth.logout();
   }
 
   changeLoginStatus(){

@@ -1,16 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { AngularFireAuth } from 'angularfire2/auth';
-import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';
+import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
+import { Observable } from 'rxjs/Observable';
+
 
 @Injectable()
+
 export class LoginService {
+  public user: Observable<firebase.User>; // observable firebase user object
 
-  
-
-  constructor(public afAuth: AngularFireAuth){}
+  constructor(private afAuth: AngularFireAuth, private router: Router){
+    this.user = afAuth.authState.uid; // this creates the user object above
+    console.log(this.user + "HERE is SOMETHING");
+  }
 
   // LOGIN GOOGLE
   loginGoogle() {
