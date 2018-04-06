@@ -15,7 +15,7 @@
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <div *ngIf="loggedIn" id="loggedIn">
-        <a>{{userName}}</a>
+        <a>{{userName}} YOU DID IT!</a>
         <a (click)="logout()">LOG OUT</a>
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
@@ -40,7 +40,7 @@
         <app-sign-up></app-sign-up>
       </div>
       <div *ngIf="!loginClick" class="modal-body">
-        <app-sign-in></app-sign-in>
+        <app-sign-in (sendClick)="changeLoginStatus()"></app-sign-in>
       </div>
     </div>
   </div> <!-- .modal-dialog -->

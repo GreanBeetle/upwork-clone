@@ -12,12 +12,14 @@ import * as firebase from 'firebase/app';
 
 export class AppComponent implements OnInit {
   loginClick = null;
-  userId;
+  loggedIn = null;
+  userId = null;
   userData;
 
   constructor(public authService: LoginService) {}
 
   ngOnInit() {
+    alert("HERE IS YOUR ID: " + this.userId)
   }
 
   openModal(){
@@ -38,9 +40,12 @@ export class AppComponent implements OnInit {
     this.loginClick = null;
   }
 
-
   logout() {
     this.authService.logout();
+  }
+
+  changeLoginStatus(){
+    this.loggedIn = true;
   }
 
 

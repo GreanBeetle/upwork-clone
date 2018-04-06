@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { LoginService } from '../login.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { LoginService } from '../login.service';
   providers: [LoginService]
 })
 export class SignInComponent implements OnInit {
+  @Output() sendClick = new EventEmitter();
 
   constructor(public authService: LoginService) { }
 
@@ -20,6 +21,10 @@ export class SignInComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  alertAppComp(){
+    this.sendClick.emit(); 
   }
 
 }
