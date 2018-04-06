@@ -11,10 +11,10 @@
 * Users may navigate between six pages. Home, Projects, Login (modal window), Sign Up (modal window), Get Started, Admin (currently accessible by all users).
 * List available projects.
 * Allow Admin to add project.
+* Allow Admin to edit project.
 
 ## Planned features and functionality
 
-* Implement Edit Project functionality. Put this on the admin page.
 * Implement Delete Project functionality. Put this on the admin page. 
 * Implement Post Job functionality.
 * Require Sign In to Post Job.  

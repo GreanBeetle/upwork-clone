@@ -20,7 +20,7 @@
     <h3>{{project.category}}</h3>
     <h3>{{project.description}}</h3>
     <h3>{{project.budget}}</h3>
-    <span><button (click)="edit()">EDIT</button><button (click)="delete(project)">DELETE</button></span>
+    <span><button (click)="edit()">EDIT</button><button (click)="deleteLocal(project)">DELETE</button></span>
     <div *ngIf="editProject">
       <label>EDIT TITLE</label>
       <input [(ngModel)]="project.title">

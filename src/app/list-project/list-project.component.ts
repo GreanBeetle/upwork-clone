@@ -41,4 +41,19 @@ export class ListProjectComponent implements OnInit {
     })
   }
 
+  deleteLocal(project: Project) {
+    if(confirm("Are you sure?")) {
+      this.projectService.deleteMaster(project);
+    }
+  }
+
 }
+
+
+
+
+
+
+
+
+// END
