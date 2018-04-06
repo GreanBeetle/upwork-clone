@@ -18,6 +18,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
+
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -37,7 +38,7 @@ export const firebaseConfig = {
     AdminComponent,
     GetStartedComponent,
     SignUpComponent,
-    SignInComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
