@@ -8,17 +8,20 @@
 
 ## Other active features and functionality
 
-* Users may navigate between six pages. Home, Projects, Login (modal window), Sign Up (modal window), Get Started, Admin (currently accessible by all users).
-* List available projects.
+* Users may navigate between six pages. Home. Projects. Login and Sign up (modal windows). Get Started (no functionality). Admin (currently accessible by all users).
+* List projects on project page.
+* Display project detail on project detail page.
+* Display projects on Admin page.  
 * Allow Admin to add project.
 * Allow Admin to edit project.
+* Allow Admin to delete project.
 
 ## Planned features and functionality
 
-* Implement Delete Project functionality. Put this on the admin page. 
-* Implement Post Job functionality.
-* Require Sign In to Post Job.  
-* Display USERNAME when user is signed in.
+* Update styling so that 'post job is always visible'.  
+* Allow user to post project.
+* Require user login to post job.   
+* Display USERNAME when user is logged in.
 * Add protected routing.
 * Restrict access to Admin page. Assign Admin privileges to single user email/password, e.g. mine.
 * Create user profile page.
