@@ -32,7 +32,7 @@ export class ListProjectComponent implements OnInit {
   editDone(localProject) {
     this.editProject = null;
     var firebaseProject = this.projectService.getProjectById(localProject.$key);
-    alert("HERE IS YOUR KEY: " + firebaseProject.$key); 
+    alert("HERE IS YOUR KEY: " + localProject.$key);
     firebaseProject.update({
       title: localProject.title,
       artist: localProject.category,

@@ -1,8 +1,12 @@
-<div class="card">
-  <div class="card-body">
-    <h1 class="card-title">{{(projectToDisplay | async)?.title}}</h1>
-    <h4 class="card-title">{{(projectToDisplay | async)?.category}}</h4>
-    <h4 class="card-title">{{(projectToDisplay | async)?.description}}</h4>
-    <h4 class="card-title">${{(projectToDisplay | async)?.budget}}</h4>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h1 class="card-title">{{(projectToDisplay | async)?.title}}</h1>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">CATEGORY: {{(projectToDisplay | async)?.category}}</h4>
+      <h4 class="card-title">DESCRIPTION: {{(projectToDisplay | async)?.description}}</h4>
+      <h4 class="card-title">BUDGET: ${{(projectToDisplay | async)?.budget}}</h4>
+    </div>
   </div>
 </div>

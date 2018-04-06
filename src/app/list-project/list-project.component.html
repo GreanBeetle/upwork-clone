@@ -1,13 +1,16 @@
-
-<div class="jumbotron" *ngIf="router.url === '/listProject'">
-  <h1>PROJECTS</h1>
-  <div class="card" *ngFor="let project of projects | async" (click)="projectDetail(project)">
-    <div class="card-header">
-      <h1>{{project.title}}</h1><br>
+<!-- displays on /listProject route, needs container -->
+<div class="container">
+  <div class="jumbotron" *ngIf="router.url === '/listProject'">
+    <h1>PROJECTS</h1>
+    <div class="card" *ngFor="let project of projects | async" (click)="projectDetail(project)">
+      <div class="card-header">
+        <h1>{{project.title}}</h1><br>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- displays on /admin, does not need container -->
 <div class="card" *ngIf="router.url === '/admin'">
   <div class="card-header">
     <h1>PROJECTS</h1>
