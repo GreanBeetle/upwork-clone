@@ -4,12 +4,13 @@
 
 ####  by John Rykken
 
-#### There are two notes about this project. (1) Aesthetically it is a simple clone of upwork.com, https://www.upwork.com/i/how-it-works/client/, a site that connects freelance developers with projects. (2) This is a code school project meant to demonstrate understanding of basic Angular CRUD functionality. It allows users to create, read, update and delete faux web and software development projects.
+#### There are two notes about this project. (1) Aesthetically it is a simple clone of upwork.com's 'How It Works' page: https://www.upwork.com/i/how-it-works/client/. Upwork is a site that connects freelance developers with projects. (2) This is a code school project meant to demonstrate understanding of basic Angular CRUD functionality. It allows users to create, read, update and delete faux web and software development projects. The projects are stored as objects in Google's NoSQL database, Firebase. User authentication is also functional. Users may create accounts using email and password.
 
-## Current features and functionality
-* Allow user to navigate between 6 pages: Home, Projects, Login (modal), Sign Up (modal), Get Started, Admin
+## Other active features and functionality
+
+* Users may navigate between six pages. Home, Projects, Login (modal window), Sign Up (modal window), Get Started, Admin (currently accessible by all users).
 * List available projects.
-* Allow ADMIN to add project.
+* Allow Admin to add project.
 
 ## Planned features and functionality
 
@@ -19,11 +20,12 @@
 * Require Sign In to Post Job.  
 * Display USERNAME when user is signed in.
 * Add protected routing.
+* Restrict access to Admin page. Assign Admin privileges to single user email/password, e.g. mine.
 * Create user profile page.
 * Shield user profile page using protected routing.
 * Style Welcome component template.
 * Style Add Project component template.   
-* Style List Project component template. 
+* Style List Project component template.
 
 
 ## Setup and Installation for Testing
@@ -37,19 +39,6 @@ TO DO
 N/A
 
 * _`N/A`_
-
-## Current Features and Specs
-
-* Include API, if possible.
-* Create user model, component. Allow user to create new handle and password. Temporarily store user info in array of user objects.
-* Create job model, component. Allow user to list new project or job. Temporarily store info in array of project objects.
-* Create horizontal navbar that includes at least three of the following options. Web Dev. Mobile Dev. Design. Writing. Admin Support. Customer Service. Marketing.
-* When navbar option clicked, display info via z-index. E.g. "student project, no information available"
-* Build 'tabs section on main page'. Include three tabs. 'If you're hiring.' 'If you're freelancing.' 'FAQs.'
-* Create jumbotron with a 'How It Works' title and a responsive 'Get Started' button.
-* Clone the two columns directly beneath the jumbotron. Clone the page down to, but not beyond, the upworks paragraph titled 'Hire the best freelancer'.
-
-## Future Features and Specs
 
 ## Built With
 
