@@ -1,5 +1,11 @@
-<h1>ADD PROJECT</h1>
+<div class="container">
+<div class="card">
+  <h3 class="card-title">ADD PROJECT</h3>
+  <input #newTitle placeholder="Title"><br>
+  <input #newCategory placeholder="Category"><br>
+  <input #newDescription placeholder="Description">
+  <input #newBudget placeholder="Budget">
+  <button (click)="submit(newTitle.value, newCategory.value, newDescription.value, newBudget.value); newTitle.value=''; newCategory.value=''; newDescription.value=''; newBudget.value=''" class="btn btn-success">ADD</button>
+</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h1>MORE TEXT THIS PAGE IS SPECIAL</h1>
+</div>

@@ -15,10 +15,9 @@
 * Allow Admin to add project.
 * Allow Admin to edit project.
 * Allow Admin to delete project.
+* Update styling so that 'post job is always visible'.  
 
 ## Planned features and functionality
-
-* Update styling so that 'post job is always visible'.  
 * Allow user to post project.
 * Require user login to post job.   
 * Display USERNAME when user is logged in.

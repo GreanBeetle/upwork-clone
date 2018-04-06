@@ -10,7 +10,7 @@ import * as firebase from 'firebase/app';
   providers: [LoginService]
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   loginClick = null;
   loggedIn = null;
   user;
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
       this.userID = user.uid;
       this.userEMAIL = user.email;
       if (user !== null) {
-        loggedIn = 'true';
+        this.loggedIn = 'true';
       }
     });
   }
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.afAuth.logOut();
-    this.loggedIn = null;  
+    this.loggedIn = null;
   }
 
   changeLoginStatus(){
