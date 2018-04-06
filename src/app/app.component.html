@@ -2,24 +2,24 @@
 <nav class="nav-main">
   <!-- big nav -->
   <div class="row" id="big-nav">
-    <div class="col-md-8" id="search-and-logo">
+    <div class="col-md-6" id="navbar-left">
       <img class="nav-header-image" src="https://www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" alt="">
       <a routerLink="" class="home-project-links">HOME</a>
       <a routerLink="listProject" class="home-project-links">PROJECTS</a>
     </div>
-    <div class="col-md-4" id="nav-visitor-item-box">
+    <div class="col-md-6" id="navbar-right">
       <!-- AUTHENTICATION -->
-      <div *ngIf="!isLoggedIn" id="login">
-        <span class="lg-nav-item" (click)="openSignin()">LOGIN</span>
-        <span class="lg-nav-item" (click)="openSignup()" id="sign-up">SiGN UP</span>
+      <div *ngIf="!loggedIn" id="notLoggedIn">
+        <span class="nav-right-item" (click)="openSignin()">LOGIN</span>
+        <span class="nav-right-item" (click)="openSignup()" id="sign-up">SiGN UP</span>
+        <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
-      <div *ngIf="isLoggedIn" id="isloggedin">
+      <div *ngIf="loggedIn" id="loggedIn">
         <a>{{userName}}</a>
         <a (click)="logout()">LOG OUT</a>
+        <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <!-- POST JOB -->
-      <button class="lg-nav-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
-      <span class="lg-nav-item" id="invisible-span"></span>
     </div>
   </div>
   <div class="row" id="small-nav">
