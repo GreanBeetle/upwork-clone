@@ -15,7 +15,7 @@
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <div *ngIf="loggedIn" id="loggedIn">
-        <span>YOUR ID: {{userId}}</span>
+        <span>{{userEMAIL}}</span>
         <span (click)="logout()">LOG OUT</span>
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>

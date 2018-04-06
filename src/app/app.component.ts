@@ -14,10 +14,16 @@ export class AppComponent implements OnInit {
   loginClick = null;
   loggedIn = null;
   user;
+  userID;
+  userEMAIL;
 
   constructor(public auth: LoginService, public afAuth: AngularFireAuth){
     this.auth.user.subscribe(user => {
-      console.log("CRAZY CRAZY CRAZY: " + user.uid + user + user.email);
+      this.userID = user.uid;
+      this.userEMAIL = user.email;
+      if (user !== null) {
+        loggedIn = 'true'; 
+      }
     });
   }
 
