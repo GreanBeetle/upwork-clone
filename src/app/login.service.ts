@@ -2,14 +2,20 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
+import { first } from 'rxjs/operators'; // CHECK AUTH STATE
 
 @Injectable()
 export class LoginService {
   user: Observable<firebase.User>;
-
+  const authenticatedUser = await isLoggedIn()
 
   constructor(public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
+  }
+
+  // determine auth state
+  isLoggedIn() {
+    return this.afAuth.authState.pipe(first()).toPromise();
   }
 
   // LOGIN GOOGLE
@@ -21,6 +27,16 @@ export class LoginService {
     this.afAuth.auth.signOut();
   }
 
+
+
+  async doSomething() {
+     const user = await isLoggedIn()
+     if (user) {
+       // do something
+     } else {
+       // do something else
+    }
+  }
 
 
   // CREATE USER EMAIL PASSWORD
