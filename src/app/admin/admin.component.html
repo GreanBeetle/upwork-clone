@@ -1,3 +1,6 @@
+<div class="jumbotron">
+  <h1>ADMIN</h1>
+</div>
 <div class="card">
   <h3 class="card-title">ADD PROJECT</h3>
   <input #newTitle placeholder="Title"><br>
@@ -5,4 +8,11 @@
   <input #newDescription placeholder="Description">
   <input #newBudget placeholder="Budget">
   <button (click)="submitForm(newTitle.value, newCategory.value, newDescription.value, newBudget.value); newTitle.value=''; newCategory.value=''; newDescription.value=''; newBudget.value=''" class="btn btn-success">ADD</button>
+</div>
+<br>
+<div class="card" *ngIf='!editProject'>
+  <app-list-project></app-list-project>
+</div>
+<div class="card"  *ngIf='editProject'>
+
 </div>

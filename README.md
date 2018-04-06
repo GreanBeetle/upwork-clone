@@ -14,8 +14,8 @@
 
 ## Planned features and functionality
 
-* Implement Edit Project functionality.
-* Implement Delete Project functionality.
+* Implement Edit Project functionality. Put this on the admin page.
+* Implement Delete Project functionality. Put this on the admin page. 
 * Implement Post Job functionality.
 * Require Sign In to Post Job.  
 * Display USERNAME when user is signed in.
