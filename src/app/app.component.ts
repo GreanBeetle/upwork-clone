@@ -13,13 +13,12 @@ import * as firebase from 'firebase/app';
 export class AppComponent implements OnInit {
   loginClick = null;
   loggedIn = null;
-  userId = null;
-  userData;
+  userId = this.afAuth.authState.uid;
 
-  constructor(public authService: LoginService) {}
+  constructor(public authService: LoginService, public afAuth: AngularFireAuth) {}
 
   ngOnInit() {
-    alert("HERE IS YOUR ID: " + this.userId)
+
   }
 
   openModal(){
