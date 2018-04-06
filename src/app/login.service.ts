@@ -12,7 +12,6 @@ export class LoginService {
 
   constructor(private afAuth: AngularFireAuth, private router: Router){
     this.user = afAuth.authState; // this creates the user object above
-    console.log(this.user + "HERE is SOMETHING");
   }
 
   // LOGIN GOOGLE
@@ -20,7 +19,7 @@ export class LoginService {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
-  logout() {
+  logOut(){
     this.afAuth.auth.signOut();
   }
 

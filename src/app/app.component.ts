@@ -17,18 +17,14 @@ export class AppComponent implements OnInit {
   userID;
   userEMAIL;
 
-  constructor(public auth: LoginService, public afAuth: AngularFireAuth){
-    this.auth.user.subscribe(user => {
+  constructor(public afAuth: LoginService){
+    this.afAuth.user.subscribe(user => {
       this.userID = user.uid;
       this.userEMAIL = user.email;
       if (user !== null) {
-        loggedIn = 'true'; 
+        loggedIn = 'true';
       }
     });
-  }
-
-  ngOnInit() {
-
   }
 
   openModal(){
@@ -50,12 +46,12 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-    this.auth.logout();
+    this.afAuth.logOut();
+    this.loggedIn = null;  
   }
 
   changeLoginStatus(){
     this.loggedIn = true;
   }
-
 
 }
