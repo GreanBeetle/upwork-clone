@@ -4,11 +4,26 @@
 
 ####  by John Rykken
 
-#### There are two notes about this project. (1) Aesthetically it is a simple clone of upwork.com, https://www.upwork.com/i/how-it-works/client/, a site that connects freelance developers with projects. (2) This is a code school project meant to demonstrate understanding of basic Angular CRUD functionality.
+#### There are two notes about this project. (1) Aesthetically it is a simple clone of upwork.com, https://www.upwork.com/i/how-it-works/client/, a site that connects freelance developers with projects. (2) This is a code school project meant to demonstrate understanding of basic Angular CRUD functionality. It allows users to create, read, update and delete faux web and software development projects.
 
 ## Current features and functionality
+* Allow user to navigate between 6 pages: Home, Projects, Login (modal), Sign Up (modal), Get Started, Admin
+* List available projects.
+* Allow ADMIN to add project.
 
 ## Planned features and functionality
+
+* Implement Edit Project functionality.
+* Implement Delete Project functionality.
+* Implement Post Job functionality.
+* Require Sign In to Post Job.  
+* Display USERNAME when user is signed in.
+* Add protected routing.
+* Create user profile page.
+* Shield user profile page using protected routing.
+* Style Welcome component template.
+* Style Add Project component template.   
+* Style List Project component template. 
 
 
 ## Setup and Installation for Testing
