@@ -17,6 +17,7 @@ import { GetStartedComponent } from './get-started/get-started.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { LoginService } from './login.service';
 
 
 export const firebaseConfig = {
@@ -49,7 +50,9 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [
+    LoginService, 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
