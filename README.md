@@ -4,7 +4,12 @@
 
 ####  by John Rykken
 
-#### This website is a basic clone of upwork.com (a site connecting freelance developers with projects). I used angular to build it. It isn't practically useful in any way. My focus was deepening my understanding of angular components, inputs and inputs, property bindings, and so on and so forth. I do hope to implement, at minimum, a search box, a pseudo login-slash-signup page, and a job posting page.      
+#### There are two notes about this project. (1) Aesthetically it is a simple clone of upwork.com, https://www.upwork.com/i/how-it-works/client/, a site that connects freelance developers with projects. (2) This is a code school project meant to demonstrate understanding of basic Angular CRUD functionality.
+
+## Current features and functionality
+
+## Planned features and functionality
+
 
 ## Setup and Installation for Testing
 

@@ -10,6 +10,8 @@ import { LoginService } from './login.service';
 
 export class AppComponent {
   loginClick = null;
+  isLoggedIn = null;
+  userName;
 
   openModal(){
     this.display='block';
