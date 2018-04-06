@@ -10,11 +10,14 @@ import * as firebase from 'firebase/app';
   providers: [LoginService]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   loginClick = null;
+  userId;
+  userData;
 
-  constructor(public authService: LoginService, public afAuth: AngularFireAuth) {
-    
+  constructor(public authService: LoginService) {}
+
+  ngOnInit() {
   }
 
   openModal(){

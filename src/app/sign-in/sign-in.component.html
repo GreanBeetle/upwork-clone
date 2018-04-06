@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-body">
     <h4 class="card-title">SIGN IN</h4>
-    <input #email placeholder="YOUR EMAIL ADDRESS"><br>
+    <input #email placeholder="EMAIL"><br>
     <input #password placeholder="PASSWORD" type="password"><br>
     <button (click)="signIn(email.value, password.value); email.value=''; password.value='';" class="btn btn-success">LOGIN</button>
   </div>

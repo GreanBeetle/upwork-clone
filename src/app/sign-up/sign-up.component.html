@@ -3,7 +3,7 @@
     <h4>CREATE ACCOUNT</h4>
   </div>
   <div class="card-body">
-    <input #newEmail placeholder="YOUR EMAIL ADDRESS"><br>
+    <input #newEmail placeholder="EMAIL ADDRESS"><br>
     <input #newPassword placeholder="PASSWORD" type="password"><br>
     <button (click)="createUserSignup(newEmail.value, newPassword.value); newEmail.value=''; newPassword.value='';" class="btn btn-success">CREATE</button>
   </div>

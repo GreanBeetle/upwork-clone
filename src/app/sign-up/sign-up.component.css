@@ -1,0 +1,12 @@
+.card {
+  text-align: center;
+}
+
+input, button, h4 {
+  margin: 5px;
+  padding: 5px;
+}
+
+input {
+  text-align: center; 
+}

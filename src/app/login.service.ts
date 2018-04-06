@@ -1,15 +1,39 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { Router } from '@angular/router';
 import * as firebase from 'firebase/app';
 
 @Injectable()
 export class LoginService {
+
   user: Observable<firebase.User>;
+  authState: any = null;
 
 
-  constructor(public afAuth: AngularFireAuth) {
-    this.user = afAuth.authState;
+  constructor(public afAuth: AngularFireAuth,
+              private db: AngularFireDatabase,
+              private routher: Router) {
+    // DETERMINE AUTH STATE
+    this.afAuth.authState.subscribe((auth) => {
+      this.authState = auth;
+    });
+  }
+
+  // RETURN TRUE IF USER LOGGED IN
+  get authenticated(): boolean {
+    return this.authState !== null;
+  }
+
+  // RETURN CURRENT USER DATA
+  get currentUser(): any {
+    return this.authenticated ? this.authState : null;
+  }
+
+  // RETURN CURRENT USER ID, authenticated() MUST BE IN PLACE
+  get currentUserId(): string {
+    return this.authenticated ? this.authState.uid : ''; 
   }
 
   // LOGIN GOOGLE
