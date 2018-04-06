@@ -9,7 +9,7 @@ import { LoginService } from '../login.service';
   providers: [LoginService]
 })
 export class SignUpComponent implements OnInit {
-
+  @Output() sendClick = new EventEmitter();
 
   constructor(public authService: LoginService) { }
 
@@ -20,6 +20,10 @@ export class SignUpComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  alertAppComp() {
+    this.sendClick.emit(); 
   }
 
 }

@@ -15,8 +15,8 @@
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <div *ngIf="loggedIn" id="loggedIn">
-        <a>{{userName}} YOU DID IT!</a>
-        <a (click)="logout()">LOG OUT</a>
+        <span>YOUR ID: {{userId}}</span>
+        <span (click)="logout()">LOG OUT</span>
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <!-- POST JOB -->
@@ -37,7 +37,7 @@
         <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
       </div>
       <div *ngIf="loginClick" class="modal-body">
-        <app-sign-up></app-sign-up>
+        <app-sign-up (sendClick)="changeLoginStatus()"></app-sign-up>
       </div>
       <div *ngIf="!loginClick" class="modal-body">
         <app-sign-in (sendClick)="changeLoginStatus()"></app-sign-in>
