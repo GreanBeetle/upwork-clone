@@ -24,7 +24,7 @@ export class ProjectService {
     return this.database.object('projects/' + id);
   }
 
-  deleteMaster(localProject: Project) {
+  deleteMaster(localProject) {
     var fbProject = this.getProjectById(localProject.$key);
     fbProject.remove();
   }
