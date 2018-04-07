@@ -36,7 +36,7 @@ export class LoginService {
     }
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
       // Handle Errors here.
-      var errorCode = error.code;
+      var errorCode = error.name;
       var errorMessage = error.message;
       // [START_EXCLUDE]
       if (errorCode == 'auth/weak-password') {
@@ -60,7 +60,7 @@ export class LoginService {
        // [START authwithemail]
        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
          // Handle Errors here.
-         var errorCode = error.code;
+         var errorCode = error.name;
          var errorMessage = error.message;
          // [START_EXCLUDE]
          if (errorCode === 'auth/wrong-password') {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from './login.service';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
+import { User } from './models/user.model';
 
 @Component({
   selector: 'app-root',
@@ -13,20 +14,19 @@ import * as firebase from 'firebase/app';
 export class AppComponent {
   loginClick = null;
   loggedIn = null;
-  user;
+  user: User = null;
+
   userID;
   userEMAIL;
+  /**
+  this hides the modal window
+  */
   display = null;
 
-
+/**
+@param afAuth Test
+*/
   constructor(public afAuth: LoginService){
-    this.afAuth.user.subscribe(user => {
-      this.userID = user.uid;
-      this.userEMAIL = user.email;
-      if (user !== null) {
-        this.loggedIn = 'true';
-      }
-    });
   }
 
   openModal(){
@@ -54,6 +54,13 @@ export class AppComponent {
 
   changeLoginStatus(){
     this.loggedIn = true;
+    this.afAuth.user.subscribe(user => {
+      this.userID = user.uid;
+      this.userEMAIL = user.email;
+      if (user !== null) {
+        this.loggedIn = 'true';
+      }
+    });
   }
 
 }

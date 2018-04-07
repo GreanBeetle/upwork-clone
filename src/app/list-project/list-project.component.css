@@ -1,4 +1,11 @@
+.jumbotron {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
 .card {
   margin: 20px;
-  padding: 20px; 
+  padding: 20px;
 }

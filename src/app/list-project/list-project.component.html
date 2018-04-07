@@ -1,10 +1,11 @@
 <!-- displays on /listProject route, needs container -->
 <div class="container">
   <div class="jumbotron" *ngIf="router.url === '/listProject'">
-    <h1>PROJECTS</h1>
+    <h1>AVAILABLE PROJECTS</h1>
     <div class="card" *ngFor="let project of projects | async" (click)="projectDetail(project)">
-      <div class="card-header">
+      <div class="card-body">
         <h1>{{project.title}}</h1><br>
+        <p>CLICK FOR DETAIL</p>
       </div>
     </div>
   </div>
