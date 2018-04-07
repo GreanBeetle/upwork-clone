@@ -18,6 +18,7 @@
 * Update styling so that 'post job is always visible'.  
 
 ## Planned features and functionality
+* Style Welcome component template.
 * Allow user to post project.
 * Require user login to post job.   
 * Display USERNAME when user is logged in.
@@ -25,22 +26,16 @@
 * Restrict access to Admin page. Assign Admin privileges to single user email/password, e.g. mine.
 * Create user profile page.
 * Shield user profile page using protected routing.
-* Style Welcome component template.
 * Style Add Project component template.   
 * Style List Project component template.
+* Add API call functionality.
 
 
-## Setup and Installation for Testing
+## Setup
 
-TO DO
+None required. For a live version of the site, visit:
 
-* _`$ example command`_
-
-## Testing
-
-N/A
-
-* _`N/A`_
+https://upwork-clone.firebaseapp.com/
 
 ## Built With
 
@@ -49,6 +44,7 @@ N/A
 * Javascript
 * Angular
 * NPM
+* Firebase 
 
 ## Authors
 
