@@ -16,6 +16,7 @@ export class AppComponent {
   user;
   userID;
   userEMAIL;
+  
 
   constructor(public afAuth: LoginService){
     this.afAuth.user.subscribe(user => {
