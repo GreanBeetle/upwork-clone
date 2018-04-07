@@ -8,14 +8,20 @@
 
 ## Other active features and functionality
 
-* Users may navigate between six pages. Home. Projects. Login and Sign up (modal windows). Get Started (no content). Admin (currently accessible by all users).
+* Users may navigate between six pages:
+(i) Home
+(ii) Projects
+(iii & iv) Login and Sign up (modal windows)
+(v) Make an API call (content in development)
+(vi) Admin (currently accessible by all users).
 * List projects on project page.
 * Display project detail on project detail page.
+* Allow user to post job via post job button. 
 * Display projects on Admin page.  
 * Allow Admin to add project.
 * Allow Admin to edit project.
 * Allow Admin to delete project.
-* Update styling so that 'post job is always visible'.  
+
 
 ## Planned features and functionality
 * Style Welcome component template.
@@ -44,7 +50,7 @@ https://upwork-clone.firebaseapp.com/
 * Javascript
 * Angular
 * NPM
-* Firebase 
+* Firebase
 
 ## Authors
 
