@@ -1,0 +1,15 @@
+.container {
+  background-color: #28ABE3;
+  padding: 10px;
+}
+
+.jumbotron {
+  background-color: #1FDA9A;
+  text-align: center;
+  font-size: 32pt;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #1FDA9A; 
+}

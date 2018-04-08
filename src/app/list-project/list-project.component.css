@@ -3,9 +3,16 @@
   margin-top: 20px;
 }
 
-
-
 .card {
   margin: 20px;
   padding: 20px;
+}
+
+.card-header {
+  text-align: center;
+  background-color: #E8B71A;
+}
+
+.card-body {
+  background-color: #DB3340;
 }
