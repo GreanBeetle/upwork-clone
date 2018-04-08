@@ -1,0 +1,28 @@
+.card {
+  width: 500px;
+  margin: 0 auto; 
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  width: 100px;
+}
+
+#description {
+  width: 500px;
+  height: 250px;
+}

@@ -1,11 +1,15 @@
 <div class="container">
-<div class="card">
-  <h3 class="card-title">ADD PROJECT</h3>
-  <input #newTitle placeholder="Title"><br>
-  <input #newCategory placeholder="Category"><br>
-  <input #newDescription placeholder="Description">
-  <input #newBudget placeholder="Budget">
-  <button (click)="submit(newTitle.value, newCategory.value, newDescription.value, newBudget.value); newTitle.value=''; newCategory.value=''; newDescription.value=''; newBudget.value=''" class="btn btn-success">ADD</button>
-</div>
+  <div class="card">
+    <div class="card-header">
+      <h2>ADD PROJECT</h2>
+    </div>
+    <div class="card-body">
+      <input #newTitle placeholder="TITLE"><br>
+      <input #newCategory placeholder="CATEGORY"><br>
+      <input #newDescription placeholder="DESCRIPTION"><br>
+      <input #newBudget placeholder="BUDGET"><br>
+      <button (click)="submit(newTitle.value, newCategory.value, newDescription.value, newBudget.value); newTitle.value=''; newCategory.value=''; newDescription.value=''; newBudget.value=''" class="btn btn-success">ADD</button>
+    </div>
 
+  </div>
 </div>
