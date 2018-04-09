@@ -1,5 +1,7 @@
 # **UPWORK CLONE**
 
+https://upwork-clone.firebaseapp.com/
+
 ## March 30, 2018
 
 ####  by John Rykken
@@ -25,7 +27,7 @@
 * Revise modal login and sign up windows.
 * Display user email when user is logged in.
 * Require user to be logged in to post a job.   
-* Restrict access to Admin page via protected routing. Assign Admin privileges to single user. 
+* Restrict access to Admin page via protected routing. Assign Admin privileges to single user.
 * Create user profile page.
 * Shield user profile page using protected routing.
 * Add API call functionality.
