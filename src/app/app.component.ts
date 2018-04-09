@@ -16,15 +16,17 @@ export class AppComponent {
   loggedIn = null;
   display = null;
   uid = null;
-  user = null;
-  email; 
+  user;
+  userEmail; // ACTUALLY DISPLAYS THE EMAIL!
 
+// THIS IS IS IT. THIS IS THE AUTHENTICATION YOU NEED. NOW ALL YOU HAVE TO DO IS FIGURE OUT THE MODAL WINDOW.
   constructor(public authService: LoginService) {
     this.authService.user.subscribe(user => {
       this.uid = user.uid;
-      this.email = user.email;
-      console.log(user.email + "HERE IS THE EMAIL")
-      this.user = user;
+      console.log(user.email + " HERE IS THE EMAIL")
+      console.log("HERE IS THE USER: " + user)
+      this.user = user.displayName;
+      this.userEmail = user.email; // ACTUALLY DISPLAYS THE EMAIL
     });
   }
 
