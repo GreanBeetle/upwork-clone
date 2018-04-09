@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-6" id="navbar-right">
       <!-- AUTHENTICATION -->
-      <div *ngIf="!loggedIn" id="notLoggedIn">
+      <!-- <div *ngIf="!loggedIn" id="notLoggedIn">
         <span class="nav-right-item" (click)="openSignin()">LOGIN</span>
         <span class="nav-right-item" (click)="openSignup()" id="sign-up">SiGN UP</span>
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
@@ -18,18 +18,49 @@
         <span>{{userEMAIL}}</span>
         <span (click)="logout()">LOG OUT</span>
         <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
-      </div>
+      </div> -->
       <!-- POST JOB -->
     </div>
   </div>
   <div class="row" id="small-nav">
   </div>
 </nav>
+<!-- USER INFORMATION -->
+<div class="card">
+  <div class="card-header">
+    <h1>UID: {{uid}}</h1>
+  </div>
+  <div class="card-body">
+    <h1>EMAIL: {{email}}</h1>
+    <h1>USER: {{user}}</h1>
+  </div>
+</div>
+<!-- NEW SIGN UP -->
+<div class="card">
+  <div class="card-header">
+    <h4>CREATE ACCOUNT</h4>
+  </div>
+  <div class="card-body">
+    <input #email placeholder="EMAIL ADDRESS"><br>
+    <input #password placeholder="PASSWORD" type="password"><br>
+    <button (click)="createUser(email.value, password.value); email.value=''; email.value=''" class="btn btn-success">CREATE</button>
+  </div>
+</div>
+<!-- SIGN IN -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">SIGN IN</h4>
+    <input #email placeholder="EMAIL"><br>
+    <input #password placeholder="PASSWORD" type="password"><br>
+    <button (click)="signIn(email.value, password.value); email.value=''; password.value=''" class="btn btn-success">LOGIN</button>
+  </div>
+</div>
+
 
 <router-outlet></router-outlet>
 
 <!-- MODAL -->
-<div class="backdrop" [ngStyle]="{'display':display}"></div>
+<!-- <div class="backdrop" [ngStyle]="{'display':display}"></div>
 <div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -43,8 +74,8 @@
         <app-sign-in (sendClick)="changeLoginStatus()"></app-sign-in>
       </div>
     </div>
-  </div> <!-- .modal-dialog -->
-</div> <!-- .modal -->
+  </div>
+</div> -->
 
 <!-- FOOTER -->
 <footer class="footer">

@@ -24,7 +24,7 @@ export class SignInComponent implements OnInit {
   }
 
   alertAppComp(){
-    this.sendClick.emit(); 
+    this.sendClick.emit();
   }
 
 }

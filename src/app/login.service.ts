@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
 export class LoginService {
   user: Observable<firebase.User>; // observable firebase user object
 
-  constructor(private afAuth: AngularFireAuth, private router: Router){
+  constructor(public afAuth: AngularFireAuth, private router: Router){
     this.user = afAuth.authState; // this creates the user object above
   }
 
@@ -27,11 +27,11 @@ export class LoginService {
 
   createUser(email, password) {
     if (email.length < 5) {
-      alert('Please enter an address longer than 10 characters.');
+      alert('Please enter an address longer than 5 characters.');
       return;
     }
     if (password.length < 5 ) {
-      alert('Your password must be at least 10 characters');
+      alert('Your password must be at least 5 characters');
       return;
     }
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
@@ -48,9 +48,9 @@ export class LoginService {
     }); // error function
   } // createUser
 
-  // SIGN
+  // SIGN IN
 
-  toggleSignIn(email, password) {
+  signIn(email, password) {
      if (firebase.auth().currentUser) {
        // [START signout]
        firebase.auth().signOut();
