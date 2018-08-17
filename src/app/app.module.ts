@@ -51,7 +51,7 @@ export const firebaseConfig = {
     AngularFireAuthModule
   ],
   providers: [
-    LoginService, 
+    LoginService
   ],
   bootstrap: [AppComponent]
 })
