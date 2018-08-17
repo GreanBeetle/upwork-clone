@@ -26,7 +26,7 @@ export const firebaseConfig = {
   databaseURL: masterFirebaseConfig.databaseURL,
   storageBucket: masterFirebaseConfig.storageBucket,
   messagingSenderId: masterFirebaseConfig.messagingSenderId
-}
+};
 
 @NgModule({
   declarations: [

@@ -37,6 +37,6 @@ const appRoutes: Routes = [
     path: 'sign-up',
     component: SignUpComponent
   }
-]
+];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

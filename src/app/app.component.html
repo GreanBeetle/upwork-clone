@@ -12,12 +12,12 @@
       <div *ngIf="!loggedIn" id="notLoggedIn">
         <span class="nav-right-item" (click)="openSignin()">LOGIN</span>
         <span class="nav-right-item" (click)="openSignup()" id="sign-up">SiGN UP</span>
-        <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
+        <button type="button" id="post-job-button" routerLink="addProject">post a job</button>
       </div>
       <div *ngIf="loggedIn" id="loggedIn">
         <span>{{userEMAIL}}</span>
         <span (click)="logout()">LOG OUT</span>
-        <button class="nav-right-item" type="button" id="post-job-button" routerLink="addProject">post a job</button>
+        <!-- <span class="nav-right-item"><button type="button" id="post-job-button" routerLink="addProject">post a job</button></span> -->
       </div>
       <!-- POST JOB -->
     </div>
