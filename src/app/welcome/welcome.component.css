@@ -13,7 +13,7 @@
   background-color: #F9F9F9;
   background: url(http://upwork.com/static/marketing/adquiro-webpack/images/hero-desktop.5cca0d66eb97.svg)  50% no-repeat fixed;
   background-size: contain;
-  background-position: top;
+  /* background-position: top; */
 }
 
 #jumbotron-header {
